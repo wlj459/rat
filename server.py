@@ -8,5 +8,5 @@ class RemoteCallScript(Service):
     def exposed_get_file_list(self, path):
         return os.listdir(path)
 
-s = ThreadedServer(RemoteCallScript, port=111, auto_register=False)
+s = ThreadedServer(RemoteCallScript, port=11111, auto_register=False)
 s.start()
